@@ -9,15 +9,19 @@
     --fuenteprincipal: 'Staatliches', cursive;
 }
 
-@media (min-width:768px){
 .container-slider{
     width: 90%;
-    max-width: 900px;
+    max-width: 90%;
     margin: auto;
     overflow: hidden;
     
-    
+    grid-row: 1/2;
     position: relative;
+
+}
+
+@media (min-width:768px){
+.container-slider{
     grid-column: 2 / 3;
 }
 }
@@ -229,14 +233,12 @@ h3{font-size: 2.4rem;}
     margin: 2rem;
     gap: 2rem;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 2;
 }
 
 @media (min-width:768px) {
     .section{
         
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 1;
     }
 }
 
